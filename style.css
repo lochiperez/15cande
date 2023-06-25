@@ -1,0 +1,155 @@
+body, *{
+    margin: 0;
+    padding: 0;
+    background-color: #E1F2F9;
+}
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Style Script', cursive; */
+
+h2,
+h4,
+h5,
+h6,
+p{
+    color: #002E5A;
+    font-family: 'Poppins', sans-serif;
+}
+
+h2,
+h4,
+h5,
+h6{
+    font-weight: 700;
+    background-color: transparent;
+}
+
+h6{
+    font-family: 'Style Script', cursive;
+    font-size: 60px;
+    font-weight: 400;
+}
+
+h3,
+h1{
+    font-family: 'Style Script', cursive;
+    color: #002E5A;
+}
+
+h1{
+    font-size: 84px;
+    font-weight: 400;
+}
+
+button{
+    background-color: #AEDCEB;
+    color: white;
+    box-shadow: 0px 0px 25px -10px #002E5A;
+    padding-inline: 25px;
+    border-radius: 25px;
+    padding-block: 10px;
+    border: unset;
+    font-family: 'Poppins', sans-serif;
+}
+
+.fecha{
+    display: inline-block;
+    white-space: nowrap;
+    width: auto;
+    /* font-family: var(--fuente-2); */
+    /* font-weight: 500; */
+    font-size: 22px;
+    line-height: 22px;
+    color: #002E5A;
+    padding: 10px 30px;
+    margin-bottom: 35px;
+    margin-top: 40px;
+    border: 2px solid;
+    border-image-slice: 1;
+    border-width: 2px;
+    border-image-source: linear-gradient(to right, #AEDCEB, #E1F2F9, #AEDCEB);
+}
+
+.mis15{
+    color: #AEDCEB;
+}
+
+.reloj{
+background-image: url(./assets/img_circuloContador01.svg); 
+background-repeat: no-repeat; 
+background-position: center; 
+height: 43vh;
+justify-content: space-around;
+}
+
+.reloj h5, .reloj svg, .reloj p, .reloj div, .dias, .horas, .minutos, .segundos{
+    background-color: transparent;
+}
+
+.fiesta{
+    font-size: 45px;
+    color: #fff;
+    background-color: #002E5A;
+    display: inline-block;
+    position: relative;
+    min-width: 70%;
+    text-align: center;
+    font-weight: 400;
+    padding-block: 8px;
+}
+
+.fiesta::before{
+    background-image: url(./assets/img_cinta01.svg);
+    position: absolute;
+    content: '';
+    background-size: contain !important;
+    background-repeat: no-repeat;
+    background-repeat-x: no-repeat;
+    background-repeat-y: no-repeat;
+    background-position: right;
+    background-position-x: right;
+    background-position-y: center;
+    height: 100%;
+    width: 18px;
+    left: -16px;
+    top: 0;
+}
+
+.fiesta::after{
+    background-image: url(./assets/img_cinta02.svg);
+    position: absolute;
+    content: '';
+    background-size: contain !important;
+    background-repeat: no-repeat;
+    background-repeat-x: no-repeat;
+    background-repeat-y: no-repeat;
+    background-position: left;
+    background-position-x: left;
+    background-position-y: center;
+    height: 100%;
+    width: 18px;
+    right: -16px;
+    top: 0;
+}
+
+/* hr{
+    border: 1px solid #002E5A;
+    width: 1000px;
+    rotate: 90deg;
+} */
+
+.dias, .horas, .minutos{
+    border-right: 1px solid #AEDCEB;
+    padding: 8px;
+}
+
+.segundos{
+    padding: 8px;
+}
+
+#dias, #horas, #minutos, #segundos{
+    width: 100%;
+    color: #002E5A;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+}
