@@ -7,7 +7,7 @@ const segundos = document.getElementById('segundos')
 
 setInterval(() => {
     const diaInicio = new Date().getTime()
-    const diaFinal = new Date('mar 9, 2024 21:00:00').getTime()
+    const diaFinal = new Date('mar 9, 2024 22:00:00').getTime()
     const distance = diaFinal - diaInicio
     const days = Math.floor(distance / (1000 * 60 * 60 * 24));
     const hours =  '0' + Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)); 
